@@ -8,6 +8,7 @@ html, body {
     background-color: #ffffff;
     font-family: Gidole;
     min-height: 700px;
+    overflow-x: hidden;
 }
 
 a{
@@ -26,7 +27,8 @@ header{
 }
 
 footer{
-    position: absolute;
+    position: relative;
+    margin-top: 50px;
     width: 100%;
     padding: 10px 0 10px 0;
     text-align: center;
@@ -53,25 +55,22 @@ nav{
 .soon{
     margin: auto;
     text-align: center;
-    position: relative;
     top: 500px;
     color: #2c3238;
     font-size: 48pt;
 }
 
-.border{
-    position: fixed;    
-}
 
 .load{
-    width: 668;
-    position: relative;
+    overflow: hidden;
+    height: 668px;
+    width: 668px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .center{
-    position: fixed;
+    position: absolute;
     -webkit-animation: preloader 2.5s infinite linear;
     -moz-animation: preloader 2.5s infinite linear;
     -ms-animation: preloader 2.5s infinite linear;
