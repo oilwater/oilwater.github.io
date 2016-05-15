@@ -21,18 +21,34 @@ header{
     top: 0;
     padding: 7px 0 7px 0;
     width: 100%;
-    min-width: 700px;
+    min-width: 400px;
     background-color: #eeeeee;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
-footer{
+#wrap{
+    overflow: hidden;
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
     position: relative;
-    margin-top: 50px;
+    z-index: 10;
+}
+
+#clear{
+    clear: both;
+    position: relative;
+    min-height: 100px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
     width: 100%;
     padding: 10px 0 10px 0;
     text-align: center;
     bottom: 0;
+    z-index: 5;
 }
 
 nav{
@@ -40,6 +56,11 @@ nav{
     margin-top: -27px;
     margin-right: 50px;
     font-size: 16pt;
+}
+
+nav img{
+    width: 24px;
+    margin-left: 7px;
 }
 
 #name img{
